@@ -3,23 +3,23 @@ defmodule WorldcupShuffle do
   The awsome WorldcupShuffle module. 100% guaranteed fun.
   """
 
-  @partecipants ["marco", "dot", "christian", "andrew", "daniel", "sam"]
+  @participants ["marco", "dot", "christian", "andrew", "daniel", "sam"]
   @teams ["brazil", "england", "sweden", "france", "belgium", "uruguay", "croatia", "russia"]
 
-  defp match_them_up(partecipants, _teams) when length(partecipants) == 0 do
+  defp match_them_up(participants, _teams) when length(participants) == 0 do
     IO.puts "------ GAME ON! ------"
   end
 
-  defp match_them_up(partecipants, teams) do
+  defp match_them_up(participants, teams) do
     selected_team = Enum.random(teams)
-    selected_partecipant = Enum.random(partecipants)
+    selected_participants = Enum.random(participants)
 
-    IO.puts "#{selected_partecipant} => #{selected_team}"
+    IO.puts "#{selected_participants} => #{selected_team}"
 
     updated_team_list = List.delete(teams, selected_team)
-    update_partecipants_list = List.delete(partecipants, selected_partecipant)
+    updated_participants_list = List.delete(participants, selected_participants)
 
-    match_them_up(update_partecipants_list, updated_team_list)
+    match_them_up(updated_participants_list, updated_team_list)
   end
 
   @doc """
@@ -27,7 +27,7 @@ defmodule WorldcupShuffle do
   """
   def go_shuffle() do
     t = Enum.shuffle(@teams)
-    p = Enum.shuffle(@partecipants)
+    p = Enum.shuffle(@participants)
 
     match_them_up(p, t)
   end             
