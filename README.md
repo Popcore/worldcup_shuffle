@@ -1,4 +1,4 @@
-# WorldcupShuffle
+# Worldcup Shuffle
 
 Yes! A little elixir script that we match team members with world cup football teams for some gambling pleasure.
 
