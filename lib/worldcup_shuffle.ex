@@ -3,7 +3,7 @@ defmodule WorldcupShuffle do
   The awsome WorldcupShuffle module. 100% guaranteed fun.
   """
 
-  @participants ["marco", "dot", "christian", "andrew", "daniel", "sam"]
+  @participants ["marco", "dot", "christian", "andrew", "daniel", "sam", "moeen"]
   @teams ["brazil", "england", "sweden", "france", "belgium", "uruguay", "croatia", "russia"]
 
   defp match_them_up(participants, _teams) when length(participants) == 0 do
