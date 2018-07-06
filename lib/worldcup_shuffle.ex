@@ -1,6 +1,6 @@
 defmodule WorldcupShuffle do
   @moduledoc """
-  The awsome WorldcupShuffle module. 100% guaranteed fun.
+  The awsome WorldcupShuffle module. 
   """
 
   @partecipants ["marco", "dot", "christian", "andrew"]
