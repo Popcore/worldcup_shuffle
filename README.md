@@ -1,21 +1,22 @@
 # WorldcupShuffle
 
-**TODO: Add description**
+Yes! A little elixir script that we match team members with world cup football teams for some gambling pleasure.
 
-## Installation
+## Requirements
+[Elixir](https://elixir-lang.org/install.html)
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `worldcup_shuffle` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:worldcup_shuffle, "~> 0.1.0"}
-  ]
-end
+## Try it out
+Compile the app with
+```
+mix compile
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/worldcup_shuffle](https://hexdocs.pm/worldcup_shuffle).
+and run it
+
+```
+mix -S iex
+
+> WorldcupShuffle.go_shuffle()
+```
+
 
