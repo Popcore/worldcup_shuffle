@@ -23,7 +23,7 @@ defmodule WorldcupShuffle do
   end
 
   @doc """
-  Randomize team list and patecipants, then join the up.
+  Randomize team list and patecipants, then join them up.
   """
   def go_shuffle() do
     t = Enum.shuffle(@teams)
