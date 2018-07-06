@@ -3,6 +3,6 @@ defmodule WorldcupShuffleTest do
   doctest WorldcupShuffle
 
   test "greets the world" do
-    assert WorldcupShuffle.hello() == :world
+    assert "foobar" == "foobar"
   end
 end
