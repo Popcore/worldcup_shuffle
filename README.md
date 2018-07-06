@@ -14,9 +14,7 @@ mix compile
 and run it
 
 ```
-mix -S iex
+iex -S mix 
 
 > WorldcupShuffle.go_shuffle()
 ```
-
-
